@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-header{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: sticky;
+}
+.container-home{
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
