@@ -31,19 +31,13 @@ public class WebController {
 	public String getProfilePage() {
 		return "/profile.html";
 	}
-	@RequestMapping("/register")
-	public String getRegisterPage() {
-		return "/register.html";
-	}
 	@RequestMapping("/celandar")
 	public String getCelandarPage() {
 		return "/celandar.html";
 	}
-
-	@RequestMapping("/error")
-	@ResponseBody
-	public String getErrorPath() {
-		return "<center><h1>Something went wrong</h1></center>";
+	@RequestMapping("/registration")
+	public String getRegistrationPage() {
+		return "/registration.html";
 	}
-	
+
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title> Registration Form </title>-
+    <link rel="stylesheet" type="text/css" href="./css/register.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+   </head>
+<body>
+
+
+  <div class="container bg-gray-900 text-white">
+    <div class="title ">Registration</div>
+      <div class="input-box">
+        <div th:if="${param.success}">
+            <div class="alert alert-success">
+              <div>
+                <span class="bg-gray-900 y-2">Registration successfull.</span>
+              </div>
+            </div>
+        </div>
+        <!-- <div th:unless="${param.error}"  class="bg-gray-900 y-2">
+          <div class="toast toast-top toast-end bg-gray-900">
+            <div class="alert alert-success bg-danger">
+              <div>
+                <span class="bg-gray-900">Registration Failed.</span>
+              </div>
+            </div>
+          </div>
+         </div> -->
+      </div>
+      <div class="content">
+        <form action="#" th:action="@{/registration}" method="post" th:object="${user}">
+          <div class="user-details bg-gray-900">
+            <div class="input-box bg-gray-900">
+              <span class="details bg-gray-900">Name</span>
+              <input type="text" placeholder="Enter your name" class="text-gray-700" required th:field="*{name}">
+            </div>
+            <div class="input-box bg-gray-900">
+              <span class="details bg-gray-900">Username</span>
+              <input type="text" placeholder="Enter your username" class="text-gray-700" required th:field="*{userName}">
+            </div>
+            <div class="input-box bg-gray-900">
+              <span class="details bg-gray-900">Email</span>
+              <input type="text" placeholder="Enter your email" class="text-gray-700" required th:field="*{email}">
+            </div>
+            <div class="input-box bg-gray-900">
+              <span class="details bg-gray-900">Password</span>
+              <input type="text" placeholder="Enter your password" class="text-gray-700" required th:field="*{password}">
+            </div>
+            <div class="input-box bg-gray-900">
+              <span class="details bg-gray-900">Roll Number</span>
+              <input type="number" placeholder="Enter your roll" class="text-gray-700" required th:field="*{roll}">
+            </div>
+            <div class="input-box bg-gray-900">
+              <span class="details bg-gray-900">Registration Number</span>
+              <input type="text" placeholder="Enter your registration" class="text-gray-700" required th:field="*{registrationNumber}">
+            </div>
+          </div>
+          </div>
+          <div class="bg-gray-900">
+            <button type="submit" class="bg-white text-black rounded space-y-2 p-2 sm:px-2 sm:py-2 lg:p-2 xl:px-2 xl:py-1.5">Submit </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
