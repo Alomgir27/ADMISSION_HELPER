@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Apply</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Font Awesome if you need it
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.22.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
+  <!--Replace with your tailwind.css once created-->
+  
+</head>
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+
+
+
+  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+    
+	<!--Main Col-->
+	<div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+	
+
+		<div class="p-4 md:p-12 text-center lg:text-left">
+			<!-- Image for mobile view-->
+			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
+			
+			<h1 class="text-3xl font-bold pt-8 lg:pt-0">Engineering University </h1>
+			<div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+			<!-- <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> What you do</p>
+			<p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/></svg> Your Location - 25.0000° N, 71.0000° W</p>
+			<p class="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p> -->
+              <div class="block my-2 text-xl">
+                <div id="countdown" class="text-xl flex-1 inline-flex mx-1 my-3">
+                  <ul class="flex-1 inline-flex">
+                    <li><span id="days" class="my-2 mr-2 font-mono text-4xl"></span>days</li>
+                    <li><span id="hours" class="m-2 font-mono text-4xl"></span>hours</li>
+                    <li><span id="minutes" class="m-2 font-mono text-4xl"></span>min</li>
+                    <li><span id="seconds" class="m-2 font-mono text-4xl"></span>sec</li>
+                  </ul>
+                </div>
+                <h1 id="headline text-base text-gray-600">left</h1>
+
+              </div>
+			<div class="pt-12 pb-8">
+				<label for="my-modal-5" class="bg-green-700 hover:bg-green-900 text-white font-bold py-3 px-4 rounded-full">
+				  Apply Now
+				</label> 
+			</div>
+		</div>
+
+	</div>
+	
+	<!--Img Col-->
+	<div class="w-full lg:w-2/5">
+		<!-- Big profile image for side bar (desktop) -->
+		<img src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1904&q=80" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block h-128">
+		<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
+		
+	</div>
+	
+	
+	<!-- Pin to top right corner -->
+	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
+		<button class="js-change-theme focus:outline-none">🌙</button>
+	  </div>
+
+</div>
+
+      <!-- The button to open modal -->
+        <!-- <label for="my-modal-5" class="btn modal-button">open modal</label> -->
+
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+        <div class="modal">
+        <div class="modal-box w-10/12 max-w-5xl">
+            <h3 class="font-bold text-lg text-gray-400">Application Form!</h3>
+
+            <div class="mx-4 my-3 text-gray-400">
+                <span class="label-text">Name</span>                
+                <input type="text" placeholder="Name" class="input input-bordered w-full max-w-xs my-2 mx-2" />
+                <span class="label-text">Gender</span>                
+                <select class="select select-bordered w-full max-w-xs ml-8 my-2">
+                    <option disabled selected>Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+            </div>
+            <div class="mx-4 my-3 text-gray-400">
+                <span class="label-text">Father's</span>                
+                <input type="text" placeholder="Father's Name" class="input input-bordered w-full max-w-xs my-2 mx-2" />
+                <span class="label-text">Mother's</span>                
+                <input type="text" placeholder="Mother's Name" class="input input-bordered w-full max-w-xs my-2 mx-2" />
+            </div>
+            <div class="mx-4 my-3 text-gray-400">
+                <span class="label-text">Roll</span>                
+                <input type="text" placeholder="Roll" class="input input-bordered w-full max-w-xs my-2 mx-2" />
+                <span class="label-text">Regis:</span>                
+                <input type="text" placeholder="Registration" class="input input-bordered w-full max-w-xs my-2 mx-2" />
+            </div>
+            <div class="mx-4 my-3 text-gray-400">
+                <span class="label-text">Email</span>                
+                <input type="text" placeholder="Email" class="input input-bordered w-full max-w-xs my-2 mx-2" />
+                <span class="label-text">Group</span>                
+                <select class="select select-bordered w-full max-w-xs ml-8 my-2">
+                    <option disabled selected>Select Group</option>
+                    <option>Science</option>
+                    <option>Arts</option>
+                    <option>Commerce</option>
+                  </select> 
+             </div>
+             <div class="mx-4 my-3 text-gray-400 ">
+                <span class="label-text">Blood</span>                
+                <select class="select select-bordered w-full max-w-xs  my-2">
+                    <option disabled selected>Select Blood Group</option>
+                    <option>O+</option>
+                    <option>A+</option>
+                    <option>AB+</option>
+                    <option>B+</option>
+                    <option>AB-</option>
+                    <option>O-</option>
+                    <option>B-</option>
+                    <option>A-</option>
+                  </select> 
+                  <span class="label-text">Board</span>                
+                  <select class="select select-bordered w-full max-w-xs ml-2 my-2">
+                    <option disabled selected>Select Board</option>
+                    <option>Dhaka</option>
+                    <option>Jessore</option>
+                    <option>Rajshahi</option>
+                    <option>Chattagram</option>
+                    <option>Sylhet</option>
+                    <option>Mymenshing</option>
+                    <option>Commila</option>
+                  </select> 
+             </div>
+
+             <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Your Address</span>
+                </label> 
+                <textarea class="textarea textarea-bordered h-24" placeholder="Address"></textarea>
+
+              </div>
+           
+            <div class="modal-action">
+                <label for="my-modal-5" class="btn modal-button" type="button" href="index"><a href="/home">submit</a></label>
+            </div>
+        </div>
+        </div>
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+	<script src="https://unpkg.com/tippy.js@4"></script>
+	<script>
+		//Init tooltips
+		tippy('.link',{
+		  placement: 'bottom'
+		})
+
+		//Toggle mode
+		const toggle = document.querySelector('.js-change-theme');
+		const body = document.querySelector('body');
+		const profile = document.getElementById('profile');
+		
+		
+		toggle.addEventListener('click', () => {
+
+		  if (body.classList.contains('text-gray-900')) {
+			toggle.innerHTML = "☀️";
+			body.classList.remove('text-gray-900');
+			body.classList.add('text-gray-100');
+			profile.classList.remove('bg-white');
+			profile.classList.add('bg-gray-900');
+		  } else
+		  {
+			toggle.innerHTML = "🌙";
+			body.classList.remove('text-gray-100');
+			body.classList.add('text-gray-900');
+			profile.classList.remove('bg-gray-900');			
+			profile.classList.add('bg-white');
+			
+		  }
+		});
+
+        (function () {
+        const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/11/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "Opps Application Date Finished!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+		
+    </script>
+	
+</body>
+
+</html>
